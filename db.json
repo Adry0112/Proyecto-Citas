@@ -1,10 +1,16 @@
-{
+{ 
   "users": [
     {
       "id": "26ea",
       "name": "Adriancy Rodríguez",
       "email": "adriancy01ruda@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "89ba",
+      "name": "Maria",
+      "email": "adriancy1ruda@gmail.com",
+      "password": "654123"
     }
   ],
   "appointments": [
@@ -23,6 +29,22 @@
       "service": "Corte",
       "date": "2025-01-28",
       "time": "13:04"
+    },
+    {
+      "id": "4132",
+      "name": "adri",
+      "email": "adriancy01ruda@gmail.com",
+      "service": "Afeitado",
+      "date": "2025-01-17",
+      "time": "18:36"
+    },
+    {
+      "id": "324c",
+      "name": "Rodriguez Adriancy",
+      "email": "adriancy01ruda@gmail.com",
+      "service": "Corte",
+      "date": "2025-02-05",
+      "time": "17:11"
     }
   ]
 }
