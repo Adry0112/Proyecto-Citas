@@ -12,7 +12,7 @@ Esta aplicación web permite a los usuarios gestionar sus citas de manera sencil
 
 **Instalación:**
 
-1. Clona el repositorio: `git clone https://github.com/tu-usuario/mi-proyecto-citas.git`
+1. Clona el repositorio: git clone https://github.com/tu-usuario/mi-proyecto-citas.git
 2. Instala las dependencias: `npm install`
 3. Copia el archivo `.env.example` a `.env` y configura las variables de entorno.
 4. Inicia el servidor de desarrollo: `npm start`
@@ -36,12 +36,6 @@ Esta aplicación web permite a los usuarios gestionar sus citas de manera sencil
     * Enviar una solicitud POST a `/register` con los datos del usuario (nombre de usuario, correo electrónico, contraseña).
 * **Inicio de sesión:**
     * Enviar una solicitud POST a `/login` con las credenciales del usuario.
-
-**Contribución:**
-
-* **Forkea el repositorio.**
-* **Crea una nueva rama.**
-* **Envía un pull request.**
 
 **Autor:**
 Adriancy Rodriguez
