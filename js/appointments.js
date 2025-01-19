@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
      
 
     function loadAppointments() {
-        fetch('http://localhost:3000/appointments') // Cambia la URL según tu API
+        fetch('http://localhost:3000/appointments') 
             .then(response => response.json())
             .then(data => {
                 const appointmentsContainer = document.getElementById('appointments-container');
-                appointmentsContainer.innerHTML = ''; // Limpiar el contenedor
+                appointmentsContainer.innerHTML = '';
 
                 if (data.length === 0) {
                     appointmentsContainer.innerHTML = '<p>No tienes citas agendadas.</p>';
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p><strong>Fecha:</strong> ${appointment.date}</p>
                             <p><strong>Hora:</strong> ${appointment.time}</p>
                             <div class="appointment-buttons">
-  <button class="edit" data-id="${appointment.id}">Editar</button>
-  <button class="delete" data-id="${appointment.id}">Eliminar</button>
-</div>
+                                <button class="edit" data-id="${appointment.id}">Editar</button>
+                                <button class="delete" data-id="${appointment.id}">Eliminar</button>
+                            </div>
 
                         `;
                         appointmentsContainer.appendChild(appointmentDiv);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => {
                 if (response.ok) {
-                    loadAppointments(); // Recargar citas después de editar
+                    loadAppointments(); 
                 } else {
                     alert("Error al editar la cita.");
                 }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => {
                 if (response.ok) {
-                    loadAppointments(); // Recargar citas después de eliminar
+                    loadAppointments();
                 } else {
                     alert("Error al eliminar la cita.");
                 }

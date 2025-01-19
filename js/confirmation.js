@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     confirmationMessage.innerText = "¡Tu cita ha sido agendada con éxito!";
 
     // Contador para la redirección
-    let countdown = 3; // Tiempo en segundos
+    let countdown = 3; 
     const countdownElement = document.getElementById('countdown');
 
     // Actualizar el contador cada segundo
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Si el contador llega a 0, redirigir a la página de citas
         if (countdown <= 0) {
             clearInterval(interval);
-            window.location.href = 'appointments.html'; // Redirigir a la página de citas
+            window.location.href = 'appointments.html';
         }
     }, 1000);
 });
